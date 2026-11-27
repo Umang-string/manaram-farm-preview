@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="86" viewBox="0 0 400 86" preserveAspectRatio="none">
+  <defs>
+    <pattern id="hem" width="20" height="14" patternUnits="userSpaceOnUse" x="0" y="72">
+      <path d="M0 0h20v4c0 6-4.5 10-10 10S0 10 0 4Z" fill="#89CAEE"/>
+    </pattern>
+    <g id="stripes">
+      <path d="M12 0h19l-11 73H0Zm40 0h18L60 73H40Z" fill="#1684C7"/>
+      <path d="M0 72h20v4c0 6-4.5 10-10 10S0 82 0 76Zm40 0h20v4c0 6-4.5 10-10 10s-10-4-10-10Z" fill="#0F6CA9"/>
+    </g>
+  </defs>
+  <path fill="#D9F1FF" d="M0 0h400v73H0z"/>
+  <path fill="url(#hem)" d="M0 72h400v14H0z"/>
+  <use href="#stripes"/>
+  <use href="#stripes" transform="translate(400) scale(-1 1)"/>
+  <path d="M70 0h260l10 72q-1 5-6 5H66q-5 0-6-5Z" fill="#89CAEE"/>
+</svg>

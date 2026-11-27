@@ -1,0 +1,143 @@
+.farm-facts {
+  --facts-gap: clamp(14px, 1.4vw, 24px);
+  --facts-inset: max(10vw, calc((100vw - 1440px) / 2));
+  --facts-tile: calc((100vw - var(--facts-inset)) * .285);
+  --facts-rail-end: calc(var(--facts-tile) * .75);
+  padding: clamp(52px, 5vw, 80px) var(--facts-inset);
+  overflow: clip;
+  color: var(--brand-ink);
+  background: var(--brand-mist);
+}
+.farm-facts__intro { margin-bottom: clamp(24px, 2.6vw, 40px); }
+.farm-facts__gallery { margin-inline-end: calc(0px - var(--facts-inset)); }
+.farm-facts__intro h2 {
+  margin: 0 0 14px;
+  color: var(--brand-ink);
+  max-width: 25ch;
+  font-size: clamp(38px, 3.75vw, 60px);
+  font-weight: 700;
+  line-height: .99;
+  letter-spacing: -.015em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.farm-facts__intro p {
+  max-width: 1100px;
+  margin: 0;
+  color: var(--brand-muted);
+  font-size: clamp(16px, 1.25vw, 19px);
+  line-height: 1.65;
+}
+.farm-facts__track {
+  display: grid;
+  grid-auto-columns: var(--facts-tile);
+  grid-auto-flow: column;
+  gap: var(--facts-gap);
+  margin: 0;
+  padding: 0 var(--facts-rail-end) 0 0;
+  scroll-padding-inline-end: var(--facts-rail-end);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  list-style: none;
+}
+.farm-facts[data-ready] .farm-facts__track { scrollbar-width: none; }
+.farm-facts[data-ready] .farm-facts__track::-webkit-scrollbar { display: none; }
+.farm-facts__track li {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  scroll-snap-align: center;
+}
+.farm-facts__track img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.farm-facts__track li > div { padding: clamp(18px, 2.15vw, 30px); }
+.farm-facts__track h3 {
+  margin: 0 0 10px;
+  color: var(--brand-link);
+  font-size: clamp(22px, 2.15vw, 32px);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -.015em;
+}
+.farm-facts__choose {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+.farm-facts__choose::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-bottom: 3px solid transparent;
+}
+.farm-facts__choose[aria-pressed="true"]::after { border-bottom-color: var(--brand-link); }
+.farm-facts__choose:focus-visible::after { outline: 3px solid var(--brand-link); outline-offset: -3px; }
+.farm-facts__track p { margin: 0; color: var(--brand-muted); line-height: 1.55; font-size: clamp(15px, 1.1vw, 17px); }
+.farm-facts__track:focus-visible, .farm-facts__controls button:focus-visible {
+  outline: 3px solid var(--brand-link);
+  outline-offset: 3px;
+}
+.farm-facts__controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: clamp(22px, 3vw, 40px);
+}
+.farm-facts__controls[hidden] { display: none; }
+.farm-facts__controls button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: var(--brand-ink);
+  background: transparent;
+  cursor: pointer;
+}
+.farm-facts__controls button:disabled { opacity: .32; cursor: default; }
+@media (hover: hover) {
+  .farm-facts__controls button:enabled:hover { color: var(--brand-ink); background: var(--brand-sky); }
+}
+.farm-facts__count { min-width: 4ch; font-weight: 650; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; }
+.farm-facts__progress { width: min(34%, 350px); height: 3px; background: var(--brand-line); }
+.farm-facts__progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(var(--facts-progress, .25));
+  transform-origin: left;
+  background: var(--brand-link);
+  transition: transform .28s ease-out;
+}
+.farm-facts__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (max-width: 850px) {
+  .farm-facts { --facts-inset: clamp(20px, 6vw, 50px); --facts-rail-end: 0px; }
+  .farm-facts__gallery { margin-inline-end: 0; }
+  .farm-facts__track { grid-auto-columns: calc((100% - var(--facts-gap)) / 2.1); }
+}
+@media (max-width: 600px) {
+  .farm-facts__track { grid-auto-columns: 86%; }
+  .farm-facts__controls { flex-wrap: wrap; justify-content: center; column-gap: 22px; row-gap: 14px; }
+  .farm-facts__progress { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .farm-facts__progress span { transition: none; }
+}

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00bfff">
+  <meta name="description" content="Meet Manaram Farm in Birtamod, Jhapa, Nepal. Learn about our dairy herd, the women who make our foods, and the Nepali ingredients behind Mana Ko and Poshilo.">
+  <title>Who we are | Manaram Farm</title>
+  <link rel="icon" href="farm-favicon.png">
+  <link rel="preload" href="fonts-montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="typography.css?v=5">
+  <link rel="stylesheet" href="farm-opening.css">
+  <link rel="stylesheet" href="farm-about.css?v=5">
+  <link rel="stylesheet" href="farm-menu.css?v=20">
+  <link rel="stylesheet" href="farm-footer.css">
+  <link rel="stylesheet" href="farm-facts.css?v=2">
+  <script src="header.js?v=6" defer></script>
+  <script src="figma-awning.js?v=6" defer></script>
+  <script src="figma-spotlight.js" defer></script>
+  <script src="farm-facts.js" defer></script>
+  <script src="farm-photo-motion.js" defer></script>
+  <script src="farm-about.js?v=2" defer></script>
+</head>
+<body class="about-page">
+  <a class="story-skip" href="#story-main">Skip to our farm story</a>
+  <header class="masthead">
+    <div class="awning">
+      <div class="awning-spotlights">
+        <div class="awning-spotlight">
+          <span class="awning-message"><img class="awning-basket" src="figma-retail-basket.svg" width="72" height="64" alt="">Retail partner in Nepal</span>
+          <a href="index.html#mana-mart">Meet Mana Mart</a>
+        </div>
+        <div class="awning-spotlight" hidden>
+          <span class="awning-message"><img class="awning-basket" src="figma-retail-basket.svg" width="72" height="64" alt="">Retail partner in the U.S.</span>
+          <a href="index.html#jibro-foods">Meet Jibro Mart</a>
+        </div>
+      </div>
+    </div>
+    <div class="navigation main-nav">
+      <a href="index.html" class="logo" aria-label="Manaram Farm home"><img src="figma-manaram-header-logo.png" width="630" height="222" alt="Manaram Farm"></a>
+      <nav class="primary-links" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="story.html" data-nav="farm" aria-current="page">Farm</a>
+        <a href="index.html#products" data-nav="products">Products</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <a class="mana-ko-cta" href="https://manakomart.com/" data-nav="mana-ko" aria-label="Shop now at Mana Mart">
+        <img src="farm-mana-ko.png" width="866" height="402" alt="">
+        Shop now
+      </a>
+      <button type="button" class="menu-toggle" hidden aria-label="Open navigation" aria-expanded="false" aria-controls="farm-mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="farm-mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" data-nav="home">Home</a>
+    <a href="story.html" data-nav="farm" aria-current="page">Farm</a>
+    <a href="index.html#products" data-nav="products">Products</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+    <a class="mana-ko-cta" href="https://manakomart.com/" data-nav="mana-ko" aria-label="Shop now at Mana Mart">
+      <img src="farm-mana-ko.png" width="866" height="402" alt="">
+      Shop now
+    </a>
+  </nav>
+  <main id="story-main" tabindex="-1">
+    <section class="farm-opening" aria-labelledby="story-title">
+      <div class="farm-opening__view">
+        <div class="farm-opening__photo motion-window">
+          <img class="motion-photo" src="about-farm-courtyard.jpg" width="1190" height="912" fetchpriority="high" alt="Farm workers cut grass beside a dairy cow in the farm courtyard in Birtamod, Jhapa.">
+        </div>
+        <h1 class="farm-opening__title" id="story-title">
+          <span class="farm-opening__line">From Birtamod, Jhapa, Nepal.</span>
+          <span class="farm-opening__name">We are<br> Manaram Farm.</span>
+        </h1>
+      </div>
+      <div class="farm-opening__intro">
+        <div class="intro-chevrons" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>We started Manaram Farm in 2014 to make more of Nepal’s food here at home. Today, our team turns milk from our herd, fruit from local orchards and roasted grains into foods for the everyday Nepali table.</p>
+      </div>
+    </section>
+
+    <section class="farm-film story-width" id="about-origin" aria-labelledby="film-title">
+      <div class="farm-film__text">
+        <a class="film-play film-play--wide" href="https://www.youtube.com/watch?v=iEz4-kW4Wjw" data-farm-film aria-label="Play the Manaram Farm film"><span aria-hidden="true"></span></a>
+        <h2 id="film-title">Who we are</h2>
+        <p>Step inside Manaram Farm for a look at the herd, the dairy and the people who bring them together.</p>
+      </div>
+      <div class="farm-film__poster motion-window">
+        <img class="motion-photo" src="about-farm-aerial.jpg" width="1600" height="505" loading="lazy" alt="An aerial view of Manaram Farm and the fields around its barns.">
+        <a class="film-play film-play--narrow" href="https://www.youtube.com/watch?v=iEz4-kW4Wjw" data-farm-film aria-label="Play the Manaram Farm film"><span aria-hidden="true"></span></a>
+      </div>
+    </section>
+    <dialog class="farm-cinema" aria-labelledby="film-dialog-title">
+      <div class="farm-cinema__bar">
+        <h2 id="film-dialog-title">The Manaram Farm film</h2>
+        <button type="button" class="farm-cinema__close" aria-label="Close film" autofocus>×</button>
+      </div>
+      <div class="farm-cinema__screen"></div>
+      <a href="https://www.youtube.com/watch?v=iEz4-kW4Wjw" class="farm-cinema__direct" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </dialog>
+
+    <section class="farm-feature story-width" id="our-farm" aria-labelledby="our-farm-title">
+      <div class="farm-feature__photo motion-window">
+        <img class="motion-photo" src="about-cow-barn.jpg" width="1600" height="415" alt="The farm’s dairy cows feeding together in an open-sided barn." loading="lazy">
+      </div>
+      <div class="farm-feature__copy">
+        <h2 id="our-farm-title">It starts with our herd in Birtamod, Jhapa</h2>
+        <p>Milk from our cows becomes paneer, yogurt and the butter we clarify for Mana Ko ghee. Working with our own herd keeps the dairy close to the people who make those foods.</p>
+        <a class="story-button" href="#farm-facts">Get to know our farm</a>
+      </div>
+    </section>
+
+  <section class="farm-facts" id="farm-facts" aria-labelledby="farm-facts-heading">
+  <div class="farm-facts__inner">
+    <header class="farm-facts__intro">
+      <h2 id="farm-facts-heading">Manaram Farm at a glance</h2>
+      <p>Our story started in Birtamod, Jhapa. Today, the women on our team and the farmers we work with help bring Nepali dairy and pantry foods to market.</p>
+    </header>
+    <div class="farm-facts__gallery" role="region" aria-roledescription="carousel" aria-label="Farm facts">
+      <ul class="farm-facts__track" id="farm-facts-track" tabindex="0" aria-label="Farm facts, scroll horizontally">
+        <li>
+          <img src="about-farm-courtyard.jpg" alt="Courtyard at Manaram Farm in Birtamod, Jhapa" width="1190" height="912" loading="lazy" decoding="async">
+          <div><h3>Founded in 2014</h3><p>We started Manaram Farm in Birtamod, Jhapa, to create jobs for women and make more food locally.</p></div>
+        </li>
+        <li>
+          <img src="about-farm-team.jpg" alt="A team member weighing food at a packing table" width="407" height="495" loading="lazy" decoding="async">
+          <div><h3>Over 75% women</h3><p>Women make up more than three quarters of our workforce.</p></div>
+        </li>
+        <li>
+          <img src="about-farm-aerial.jpg" alt="An aerial view of farmland in Birtamod, Jhapa" width="1600" height="505" loading="lazy" decoding="async">
+          <div><h3>Over 40,000 farmers</h3><p>That’s how many farmers we’ve supported in Nepal since the farm began.</p></div>
+        </li>
+        <li>
+          <img src="about-cow-barn.jpg" alt="The dairy herd at Manaram Farm" width="1600" height="415" loading="lazy" decoding="async">
+          <div><h3>Ingredients from Nepal</h3><p>We make paneer from our herd’s milk, pickle lapsi for achar and blend roasted grains for sattu.</p></div>
+        </li>
+      </ul>
+      <div class="farm-facts__controls" hidden>
+        <div class="farm-facts__progress" aria-hidden="true"><span></span></div>
+        <button type="button" class="farm-facts__prev" aria-label="Previous farm fact" aria-controls="farm-facts-track"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 5-7 7 7 7M4 12h16"/></svg></button>
+        <span class="farm-facts__count" aria-hidden="true">1 / 4</span>
+        <button type="button" class="farm-facts__next" aria-label="Next farm fact" aria-controls="farm-facts-track"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 5 7 7-7 7M20 12H4"/></svg></button>
+      </div>
+      <span class="farm-facts__status" role="status"></span>
+    </div>
+  </div>
+</section>
+
+    <section class="farm-vision story-width" aria-labelledby="vision-title">
+      <h2 id="vision-title">Our vision for Himalayan food</h2>
+      <figure class="farm-vision__panel">
+        <div class="farm-vision__photo"><img src="about-market.jpg" width="407" height="495" loading="lazy" alt="A shopper takes a closer look at a product at a Manaram market stall."></div>
+        <blockquote cite="https://manaram.farm/about/">
+          <p>“Our vision is to create high-quality Himalayan foods with innovative methods, promoting them locally and globally to help reduce Nepal’s trade deficit.”</p>
+          <cite>Manaram Farm, Our Vision</cite>
+        </blockquote>
+      </figure>
+    </section>
+
+    <section class="farm-feature story-width farm-feature--people" id="our-people" aria-labelledby="people-title">
+      <div class="farm-feature__photo motion-window">
+        <img class="motion-photo" src="about-packing.jpg" width="558" height="400" alt="A Manaram team member sealing a pouch on the packing line." loading="lazy">
+      </div>
+      <div class="farm-feature__copy">
+        <h2 id="people-title">The women who make our food</h2>
+        <p>Creating jobs for women was part of the farm’s purpose from the beginning. Women now make up more than three quarters of our workforce. Their work reaches from the production floor to the packs that leave Birtamod, Jhapa.</p>
+        <a class="story-button" href="#our-food">See what we make</a>
+      </div>
+    </section>
+
+    <section class="farm-feature farm-feature--left story-width" id="our-food" aria-labelledby="food-title">
+      <div class="farm-feature__photo motion-window">
+        <img class="motion-photo" src="figma-rice-winnowing.jpg" width="1774" height="887" alt="Hands winnowing grain in a woven bamboo tray." loading="lazy">
+      </div>
+      <div class="farm-feature__copy">
+        <h2 id="food-title">Nepali ingredients, familiar flavors</h2>
+        <p>Tart lapsi gives our achar its bite. Roasted grains and pulses give Poshilo sattu its nutty taste. As we improve the way we prepare each batch, we keep those familiar flavors at the center of the recipe.</p>
+        <a class="story-button" href="index.html#products">Explore our foods</a>
+      </div>
+    </section>
+
+    <section class="farm-location" id="locations" aria-labelledby="location-title">
+      <div class="farm-location__inner story-width">
+        <svg class="farm-location__map" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="location-map-title">
+          <title id="location-map-title">Map of Nepal showing Kathmandu in central Nepal and Birtamod in the east.</title>
+          <image href="about-nepal-locations.svg" width="640" height="440" aria-hidden="true"/>
+          <g aria-hidden="true" stroke-width="3" paint-order="stroke">
+            <text x="219" y="205" font-size="28" font-style="italic" letter-spacing="2.5" fill="var(--brand-muted)" stroke="var(--brand-mist)">Nepal</text>
+            <g font-size="22" font-weight="700" fill="var(--brand-ink)" stroke="var(--brand-mist)" stroke-width="3.2" stroke-linejoin="round">
+              <text x="424.3" y="240.8">Kathmandu</text>
+              <text x="558.6" y="390.4" text-anchor="end">Birtamod</text>
+            </g>
+          </g>
+        </svg>
+        <div class="farm-location__copy">
+          <h2 id="location-title">Where to find <span>Manaram Farm</span></h2>
+          <p>Our farm is in Ward 10 of Birtamod, Jhapa. Our Kathmandu office is in Baluwatar 4. For retail and distribution inquiries, we welcome you to get in touch.</p>
+          <a class="story-button" href="#contact">Contact our team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="retail" id="story-footer">
+    <section class="footer-info" aria-label="Locations, retailers, and contact information">
+      <div>
+        <strong id="footer-location-heading">Our locations</strong>
+        <ul class="footer-addresses" aria-labelledby="footer-location-heading">
+          <li>Kathmandu, Nepal<br>Baluwatar 4</li>
+          <li>Birtamod, Jhapa, Nepal<br>Ward 10</li>
+        </ul>
+      </div>
+      <div>
+        <strong id="footer-retailers-heading">Where to buy</strong>
+        <ul aria-labelledby="footer-retailers-heading">
+          <li>Mana Mart</li>
+          <li>Jibro Foods</li>
+        </ul>
+      </div>
+      <div id="contact"><strong>Business inquiries</strong><p>+977-01-5971547<br>info@manaram.group</p></div>
+    </section>
+    <div class="footer-lower">
+      <div class="store-callout">
+        <img class="footer-wordmark" src="figma-manaram-footer-logo-white.png" width="630" height="222" alt="Manaram Farm" decoding="async">
+        <p>Producing dairy and pantry foods in Birtamod, Jhapa, Nepal, since 2014.</p>
+        <a class="footer-cta" href="mailto:info@manaram.group">Get in touch</a>
+      </div>
+      <figure class="footer-certifications">
+        <img id="retail-partners" src="figma-footer-certifications-white.png?v=4" width="2320" height="540" loading="lazy" decoding="async" alt="IAS Accredited Management Systems Certification Body. G-CERTi System Service, GINE-0068-FC. ISO 22000:2018.">
+        <figcaption>At our facility in Birtamod, Jhapa, the food safety management system is certified to <strong>ISO 22000:2018</strong>.</figcaption>
+      </figure>
+    </div>
+    <small class="footer-copyright">© 2025 Manaram Farm. All rights reserved.</small>
+  </footer>
+</body>
+</html>

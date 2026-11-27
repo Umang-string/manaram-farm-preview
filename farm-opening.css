@@ -1,0 +1,36 @@
+.farm-opening { position: relative; }
+.farm-opening__view { position: relative; display: grid; align-items: end; height: clamp(470px, calc(100svh - var(--masthead-height, var(--nav-height))), 1080px); padding: 3rem 5% clamp(108px, 17vh, 174px); isolation: isolate; }
+.motion-window { position: relative; overflow: hidden; }
+.motion-photo { position: absolute; inset: -7% 0; width: 100%; height: 114%; object-fit: cover; transform: translateY(var(--photo-y, 0px)); }
+.farm-opening__photo { position: absolute; inset: 0; z-index: -2; background: var(--brand-sky); }
+.farm-opening__photo .motion-photo { object-position: 50% 60%; }
+.farm-opening__photo::after, .farm-opening__photo::before { content: ""; position: absolute; inset: 0; pointer-events: none; }
+.farm-opening__photo::after { background: linear-gradient(180deg, rgb(6 26 37 / .06) 14%, rgb(0 17 22 / .13) 35%, rgb(0 17 19 / .55) 100%); }
+.farm-opening__photo::before { z-index: 1; background: var(--brand-sky); transform: scaleY(0); transform-origin: top; }
+.farm-opening__title { margin: 0; pointer-events: none; position: relative; text-align: center; text-transform: uppercase; color: white; font-weight: 800; line-height: .94; letter-spacing: .002em; }
+.farm-opening__title span { display: block; }
+.farm-opening__line { font-size: clamp(31px, 4.4vw, 68px); margin-bottom: .12em; }
+.farm-opening__name { font-size: clamp(68px, 8.9vw, 144px); }
+
+@media (max-width: 1023px) {
+  .farm-opening__view { height: max(450px, calc(80svh - var(--masthead-height, var(--nav-height)))); padding-bottom: 110px; }
+}
+@media (max-width: 767px) {
+  .farm-opening__view { height: max(400px, calc(608px - var(--masthead-height, var(--nav-height)))); padding: 3rem 16px 38px; }
+  .farm-opening__photo .motion-photo { object-position: 55% 55%; }
+  .farm-opening__name { font-size: clamp(28px, 9.25vw, 71px); }
+  .farm-opening__line { font-size: clamp(24px, 6.6vw, 38px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .farm-opening__photo::before { animation: lift-sky 3.75s cubic-bezier(.16,.72,.2,1) both; }
+  .farm-opening__photo .motion-photo { animation: settle-photo 3.75s cubic-bezier(.16,.72,.2,1) both; }
+  .farm-opening__line, .farm-opening__name { animation: reveal-phrase .75s ease-out both; }
+  .farm-opening__line { animation-delay: .12s; }
+  .farm-opening__name { animation-delay: .34s; }
+  @keyframes lift-sky { from { transform: scaleY(1); } to { transform: scaleY(0); } }
+  @keyframes settle-photo { from { scale: 1.12; } to { scale: 1; } }
+  @keyframes reveal-phrase { from { clip-path: inset(100% 0 0); } to { clip-path: inset(-3% 0); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-photo { transform: none; }
+}

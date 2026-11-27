@@ -1,0 +1,108 @@
+.retail {
+  --sky-trim: clamp(2rem, 3vw, 3.5rem);
+  max-width: 1920px;
+  margin-inline: auto;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(max(821 * var(--unit), 29.5rem) - var(--sky-trim));
+  background: var(--retail-navy);
+}
+.retail p, .retail figure { margin: 0; }
+.retail img { display: block; max-width: 100%; }
+.footer-info {
+  --landscape-width: clamp(105rem, 100vw, 1920px);
+  display: grid;
+  grid-template-columns: minmax(0, max-content) repeat(2, max-content);
+  justify-content: end;
+  align-content: start;
+  min-height: calc(var(--landscape-width) * .24 - var(--sky-trim));
+  /* Anchor the headings to the sun at y=586 in the 5761px-wide artwork. */
+  padding: calc(var(--landscape-width) * .10172 - 3px - var(--sky-trim)) 12.25% 0 42%;
+  background: url("figma-retail-landscape.jpg") 30% calc(0px - var(--sky-trim)) / var(--landscape-width) auto no-repeat;
+  gap: 18px clamp(24px, 4vw, 48px);
+  font-size: 1rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.footer-info strong { display: block; font-size: 1.125rem; font-weight: 700; line-height: 1.25; }
+.footer-info p { margin-top: .375rem; }
+.footer-info p, .footer-info ul { color: var(--brand-muted); font-weight: 600; }
+.footer-info ul { margin: .375rem 0 0; padding: 0; list-style: none; }
+.footer-addresses li + li { margin-top: .375rem; }
+.footer-lower {
+  display: grid;
+  grid-template-columns: minmax(0, 30fr) minmax(min(65%, 30rem), 43fr);
+  align-items: center;
+  column-gap: 3.5%;
+  margin-inline: 12.25%;
+  color: white;
+}
+.footer-wordmark { width: clamp(13rem, 18vw, 20rem); height: auto; }
+.store-callout p { max-width: 38ch; margin-top: .65rem; font-size: var(--text-body); line-height: 1.45; }
+.footer-cta { display: block; width: min(100%, 25rem); margin-top: 1rem; padding: .85em 1em; border-radius: 100px; background: var(--brand-cta); color: var(--brand-on-cta); font-size: var(--text-action); font-weight: 740; text-decoration: none; text-align: center; text-transform: uppercase; }
+.footer-cta:is(:hover, :focus-visible) { background: var(--brand-cta-hover); }
+.retail .footer-cta:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.footer-certifications { justify-self: end; width: min(100%, 30rem); text-align: end; }
+.footer-certifications img { width: min(100%, 30vw, 25.375rem); height: auto; margin-inline-start: auto; }
+.footer-certifications figcaption {
+  margin-top: 1rem;
+  color: white;
+  font-size: .875rem;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+.footer-copyright {
+  margin-top: auto;
+  padding: 2rem 6% 1rem;
+  color: var(--brand-soft);
+  font-size: .875rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (max-width: 74.99rem) {
+  .retail { display: grid; min-height: auto; padding-bottom: 2rem; background: var(--retail-navy); }
+  .footer-info {
+    min-height: 0;
+    grid-row: 1;
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    padding: 2rem 6% 1rem 27%;
+    background: #cfeaf5;
+  }
+  .retail::before {
+    content: "";
+    grid-row: 2;
+    height: clamp(5rem, 18vw, 10rem);
+    background: url("figma-retail-landscape.jpg") center 35% / 100% auto no-repeat;
+  }
+}
+@media (max-width: 63.99rem) {
+  .footer-lower { margin: 1.5rem 6% 0; }
+  .footer-cta { width: max-content; max-width: 100%; }
+  .footer-copyright { padding-bottom: 0; }
+}
+@media (max-width: 42rem) {
+  .footer-info {
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    padding-inline-start: 6%;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-lower { grid-template-columns: 1fr; row-gap: 2.5rem; }
+  .footer-certifications { justify-self: center; text-align: center; }
+  .footer-certifications img { width: min(100%, 19rem); margin-inline: auto; }
+  .footer-certifications figcaption {
+    margin-top: 1.75rem;
+    color: #e2e2e2;
+    font-size: .75rem;
+    font-weight: 200;
+  }
+  .retail::before {
+    height: auto;
+    aspect-ratio: 20 / 9;
+    background-position: 12.5% 28.5%;
+    background-size: 300% auto;
+  }
+}

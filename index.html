@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#00bfff">
+  <title>Manaram Farm | Dairy and Pantry Foods from Nepal</title>
+  <meta name="description" content="Manaram Farm is based in Birtamod, Jhapa, and produces dairy and pantry foods from Nepal. Explore our 12 product categories and our retail partners in Nepal and the United States.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Manaram Farm">
+  <meta property="og:title" content="Manaram Farm | Dairy and Pantry Foods from Nepal">
+  <meta property="og:description" content="From cow’s milk ghee to lapsi achar, discover the foods Manaram Farm makes in Nepal and the retailers that carry them in Nepal and the United States.">
+  <link rel="icon" href="farm-favicon.png">
+  <link rel="preload" href="fonts-montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="typography.css?v=5">
+  <link rel="stylesheet" href="farm-opening.css">
+  <link rel="stylesheet" href="figma.css?v=181">
+  <link rel="stylesheet" href="farm-menu.css?v=20">
+  <link rel="stylesheet" href="farm-footer.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Manaram Farm",
+      "foundingDate": "2014",
+      "description": "A Nepali food producer based in Birtamod, Jhapa. Its portfolio includes farm dairy, pickles, roasted grain blends and other pantry foods.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baluwatar 4",
+        "addressLocality": "Kathmandu",
+        "addressCountry": "NP"
+      },
+      "email": "info@manaram.group",
+      "telephone": "+977-01-5971547"
+    }
+  </script>
+  <script src="header.js?v=6" defer></script>
+  <script src="figma-awning.js?v=6" defer></script>
+  <script src="figma-spotlight.js" defer></script>
+  <script src="farm-photo-motion.js" defer></script>
+  <script src="figma-hero.js?v=3" defer></script>
+  <script src="figma-farm.js?v=11" defer></script>
+  <script src="figma-categories.js?v=23" defer></script>
+</head>
+
+<body id="top">
+  <header class="masthead">
+    <div class="awning">
+      <div class="awning-spotlights">
+        <div class="awning-spotlight">
+          <span class="awning-message"><img class="awning-basket" src="figma-retail-basket.svg" width="72" height="64" alt="">Retail partner in Nepal</span>
+          <a href="#mana-mart">Meet Mana Mart</a>
+        </div>
+        <div class="awning-spotlight" hidden>
+          <span class="awning-message"><img class="awning-basket" src="figma-retail-basket.svg" width="72" height="64" alt="">Retail partner in the U.S.</span>
+          <a href="#jibro-foods">Meet Jibro Mart</a>
+        </div>
+      </div>
+    </div>
+    <div class="navigation main-nav">
+      <a href="#top" class="logo" aria-label="Manaram Farm home"><img src="figma-manaram-header-logo.png" width="630" height="222" alt="Manaram Farm"></a>
+      <nav class="primary-links" aria-label="Primary navigation">
+        <a href="#top" data-nav="home" aria-current="page">Home</a>
+        <a href="story.html" data-nav="farm">Farm</a>
+        <a href="#products" data-nav="products">Products</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <a class="mana-ko-cta" href="https://manakomart.com/" data-nav="mana-ko" aria-label="Shop now at Mana Mart">
+        <img src="farm-mana-ko.png" width="866" height="402" alt="">
+        Shop now
+      </a>
+      <button type="button" class="menu-toggle" hidden aria-label="Open navigation" aria-expanded="false" aria-controls="farm-mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="farm-mobile-nav" aria-label="Mobile navigation">
+    <a href="#top" data-nav="home" aria-current="page">Home</a>
+    <a href="story.html" data-nav="farm">Farm</a>
+    <a href="#products" data-nav="products">Products</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+    <a class="mana-ko-cta" href="https://manakomart.com/" data-nav="mana-ko" aria-label="Shop now at Mana Mart">
+      <img src="farm-mana-ko.png" width="866" height="402" alt="">
+      Shop now
+    </a>
+  </nav>
+  <main>
+    <section class="hero-carousel farm-opening" aria-labelledby="home-title">
+      <div class="farm-opening__view">
+        <div class="farm-opening__photo motion-window">
+          <div class="hero-track">
+            <picture>
+              <source media="(max-width: 700px)" srcset="figma-hero-pasture-mobile.webp">
+              <img class="hero motion-photo is-active" src="figma-hero-pasture.webp" width="1942" height="809" alt="Dairy cows graze in a green pasture beneath a mountain range." fetchpriority="high">
+            </picture>
+            <picture>
+              <source media="(max-width: 700px)" srcset="figma-hero-barn-mobile.webp">
+              <img class="hero motion-photo" src="figma-hero-barn.webp" width="1942" height="809" alt="Black-and-white dairy cows feed on hay in an open-sided barn." aria-hidden="true">
+            </picture>
+          </div>
+        </div>
+        <h1 class="farm-opening__title" id="home-title">
+          <span class="farm-opening__line">From our herd and Nepal’s harvest</span>
+          <span class="farm-opening__name">We are<br> Manaram Farm.</span>
+        </h1>
+        <div class="hero-choices" role="group" aria-label="Choose a banner" hidden>
+          <button type="button" aria-label="Show cows in the pasture" aria-pressed="true"></button>
+          <button type="button" aria-label="Show cows in the barn" aria-pressed="false"></button>
+        </div>
+      </div>
+    </section>
+    <section class="farm" id="farm" tabindex="-1" aria-label="About Manaram Farm">
+      <img class="farm-anniversary" src="figma-farm-anniversary-barn.png" width="500" height="500" alt="Manaram Farm: 12 years of trust. Since 2024. Traditional taste, innovative make." decoding="async">
+      <figure class="certifications" aria-label="Food safety certification for the Birtamod, Jhapa facility">
+        <img src="farm-ias-accredited.png" width="300" height="145" alt="IAS Accredited">
+        <div><span>Certified to</span><strong>ISO 22000:2018</strong></div>
+        <img src="farm-g-cert2.png" width="800" height="280" alt="G-CERT2">
+      </figure>
+      <p class="farm-intro">Manaram Farm promotes local resources to create high-quality food for everyday life. Through our brands, we make FMCG products from the finest raw materials, using traditional and innovative techniques, so they are as delicious as they are healthy.</p>
+      <a class="learn" href="story.html">Explore our farm story</a>
+      <div class="farm-signature">
+        <img src="farm-mana-ko.png" width="866" height="402" alt="Mana Ko" decoding="async">
+      </div>
+    </section>
+    <section class="products" id="products" aria-labelledby="products-heading">
+      <div class="products-panel">
+        <header class="products-intro">
+          <h2 id="products-heading">Product categories</h2>
+        </header>
+        <div class="product-gallery" role="region" aria-label="Featured product categories" aria-roledescription="carousel">
+          <ul class="category-lineup" id="category-lineup" role="list" aria-label="Featured product categories">
+            <li>
+              <button class="category-card category-dairy" type="button">
+                <picture class="category-art">
+                  <img data-packshot="catalog-cards-dairy.webp" src="catalog-banners-dairy-catalog.png" alt="" loading="lazy" decoding="async">
+                </picture>
+                <span class="category-content">
+                  <span class="category-name">Milk &amp; dairy</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="category-card category-achar" type="button">
+                <picture class="category-art">
+                  <img data-packshot="catalog-cards-mana-ko-achar.webp" src="catalog-banners-achar-catalog.png" alt="" loading="lazy" decoding="async">
+                </picture>
+                <span class="category-content">
+                  <span class="category-name">Mana Ko achar</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="category-card category-sukuti" type="button">
+                <picture class="category-art">
+                  <img data-packshot="catalog-cards-dried-meat.webp" src="catalog-banners-sukuti-catalog.png" alt="" loading="lazy" decoding="async">
+                </picture>
+                <span class="category-content">
+                  <span class="category-name">Sukuti &amp; dried fish</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="category-card category-chiura" type="button">
+                <picture class="category-art">
+                  <img data-packshot="catalog-cards-pantry.webp" src="catalog-banners-chiura-catalog.png" alt="" loading="lazy" decoding="async">
+                </picture>
+                <span class="category-content">
+                  <span class="category-name">Chiura &amp; granola</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="category-card category-sattu" type="button">
+                <picture class="category-art">
+                  <img data-packshot="catalog-cards-sattu.webp" src="catalog-banners-sattu-catalog.png" alt="" loading="lazy" decoding="async">
+                </picture>
+                <span class="category-content">
+                  <span class="category-name">Poshilo Sattu</span>
+                </span>
+              </button>
+            </li>
+          </ul>
+          <div class="category-strip" role="group" aria-label="Choose a product category" hidden></div>
+          <div class="gallery-controls" hidden>
+            <div class="gallery-dots" role="group" aria-label="Choose a featured category"></div>
+            <button class="gallery-playback" type="button" aria-label="Pause category slideshow"></button>
+          </div>
+        </div>
+        <details class="portfolio-catalog" id="full-catalog">
+          <summary class="category-view-all"><span>View all 12 categories</span><span>Hide catalog</span></summary>
+          <div class="portfolio-catalog-list">
+            <details>
+              <summary>Milk &amp; dairy</summary>
+              <p>Milk from our herd goes into Mana Ko paneer, dahi (yogurt) and ghee. The dairy range also includes Chhurra Chhurpi, a firm, dried cow’s milk cheese.</p>
+              <ul>
+                <li>Chhurra Chhurpi Josh (100 g)</li>
+                <li>Chhurra Chhurpi Meetho (100 g)</li>
+                <li>Chhurra Chhurpi Peanut Butter (100 g)</li>
+                <li>Chhurra Chhurpi The Original (100 g)</li>
+                <li>Mana Ko Butter</li>
+                <li>Mana Ko Cream</li>
+                <li>Mana Ko Dahi</li>
+                <li>Mana Ko Ghee (500 ml)</li>
+                <li>Mana Ko Milk</li>
+                <li>Mana Ko Nauni</li>
+                <li>Mana Ko Paneer</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Mana Ko achar</summary>
+              <p>We make Mana Ko achar with ingredients such as lapsi (hog plum), garlic and jackfruit. The selection also includes whole dalle chilies and bamboo shoots preserved in brine.</p>
+              <ul>
+                <li>Dalle in Brine</li>
+                <li>Mana Ko Akabare Garlic Achar</li>
+                <li>Mana Ko Gundruk Pickle (200 g)</li>
+                <li>Mana Ko Jackfruit Pickle (380 g)</li>
+                <li>Mana Ko Lapsi Achar (380 g)</li>
+                <li>Mana Ko Mango Achar</li>
+                <li>Mana Ko Mix Achar</li>
+                <li>Mana Ko Mushroom Choila Achar (300 g)</li>
+                <li>Mana Ko Timur Chop Achar (250 g)</li>
+                <li>Tama in Brine</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Sukuti &amp; dried fish</summary>
+              <p>Sahi Sukuti comes in buffalo and chicken varieties, including timur and akabare garlic seasonings. Mana Ko Perungo is our dried fish.</p>
+              <ul>
+                <li>Mana Ko Perungo (200 g)</li>
+                <li>Sahi Sukuti Akabare Garlic (100 g)</li>
+                <li>Sahi Sukuti Chicken - Akabare Garlic</li>
+                <li>Sahi Sukuti Chicken - Original</li>
+                <li>Sahi Sukuti Chicken - Sandheko</li>
+                <li>Sahi Sukuti Chicken - Shitaan</li>
+                <li>Sahi Sukuti Chicken - Timure</li>
+                <li>Sahi Sukuti Momo (100 g)</li>
+                <li>Sahi Sukuti Sadheko (100 g)</li>
+                <li>Sahi Sukuti The Original (100 g)</li>
+                <li>Sahi Sukuti Tikka Masala (100 g)</li>
+                <li>Sahi Sukuti Timur (100 g)</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Chiura &amp; granola</summary>
+              <p>Chiura is rice flattened into flakes. We offer white and red Taichin chiura, as well as a granola made with beaten rice.</p>
+              <ul>
+                <li>Chiura Granola</li>
+                <li>Chiura Taichin (Rato)</li>
+                <li>Chiura Taichin (Seto)</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Poshilo Sattu</summary>
+              <p>Roasted grains and pulses form the base of Poshilo sattu. Blends include multigrain, fruit and nut, and savory chickpea with jaljeera spices.</p>
+              <ul>
+                <li>Chana Masala Satu</li>
+                <li>Kids Lito Satu</li>
+                <li>Mango Madness Satu</li>
+                <li>Moms Delight Satu</li>
+                <li>Multigrain Satu</li>
+                <li>Nutri + Satu</li>
+                <li>Nutty Delight Satu</li>
+                <li>Protein + Satu</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Grains &amp; pulses</summary>
+              <ul>
+                <li>Bhuteko Kalo Bhatmas</li>
+                <li>Bhuteko Khairo Bhatmas</li>
+                <li>Bhuteko Seto Bhatmas</li>
+                <li>Jetho Budho Rice</li>
+                <li>Kacho Kalo Bhatmas</li>
+                <li>Kacho Khairo Bhatmas</li>
+                <li>Kacho Seto Bhatmas</li>
+                <li>Kwati Beans</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Flours</summary>
+              <ul>
+                <li>Buckwheat Flour</li>
+                <li>Finger Millet Flour</li>
+                <li>Taichin Rice Flour</li>
+                <li>Yomari Flour</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Masala &amp; spices</summary>
+              <ul>
+                <li>Fish Masala</li>
+                <li>Nepali Chatpate Masala</li>
+                <li>Nepali Chicken Masala</li>
+                <li>Nepali Chowmein Masala</li>
+                <li>Nepali Hog Plum Masala</li>
+                <li>Nepali Momo Masala</li>
+                <li>Nepali Mutton Masala</li>
+                <li>Nepali Rice Pudding Masala</li>
+                <li>Nepali Sekuwa Masala</li>
+                <li>Nepali Tea Masala</li>
+                <li>Nepali Timur Masala</li>
+                <li>Yomari Stuffing Masala</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Sugar, salt &amp; seeds</summary>
+              <ul>
+                <li>Akabare Khursani Powder</li>
+                <li>Alaichi</li>
+                <li>Amla Powder</li>
+                <li>Black Mustard Seed</li>
+                <li>Himalayan Black Salt Powder</li>
+                <li>Jimbu</li>
+                <li>Kalo Til</li>
+                <li>Khairo Til</li>
+                <li>Lapsi Powder</li>
+                <li>Misri</li>
+                <li>Moringa Powder</li>
+                <li>Sankhuwa Shakhar</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Dried &amp; fermented</summary>
+              <ul>
+                <li>Dried Akabare Khursani</li>
+                <li>Maas and Pidalu Maseura</li>
+                <li>Rayo Gundruk</li>
+                <li>Tori Gundruk</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Titaura</summary>
+              <ul>
+                <li>Dried Amla Candy</li>
+                <li>Hot &amp; Sour Hog Plum Candy</li>
+                <li>Hot Plum Stick Candy</li>
+                <li>Jujube Candy</li>
+                <li>Non Spicy Hog Plum Candy</li>
+                <li>Spicy Hog Plum Candy</li>
+                <li>Sweet Hog Plum Candy</li>
+                <li>Sweet Hog Plum Lapsi Pop Candy</li>
+                <li>Tamarind Spicy Candy</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Tea &amp; coffee</summary>
+              <ul>
+                <li>CTC Tea</li>
+                <li>Mana Ko Coffee Beans</li>
+                <li>Mana Ko Ground Coffee Hilly Premium</li>
+                <li>Mana Ko Ground Coffee Mountain Premium</li>
+              </ul>
+            </details>
+          </div>
+        </details>
+      </div>
+    </section>
+    <section class="features" id="farm-features" tabindex="-1" aria-labelledby="features-heading">
+      <div class="features-panel">
+        <h2 id="features-heading">Local resources. Modern methods. <span>One farm you can trust.</span></h2>
+        <p class="farm-statement">We grow and source across Nepal to support our community, then finish each batch with traditional craft and contemporary standards so flavor and freshness hold together.</p>
+        <div class="promo">
+          <div class="promo-pack">
+            <div class="promo-slide is-active" role="img" aria-label="Mana Ko cow ghee, Aji Ko achar, and Mana Ko chiura">
+              <img class="promo-chiura" src="hero-pantry.webp" width="383" height="477" alt="" loading="lazy">
+              <img class="promo-achar" src="hero-achar.webp" width="237" height="474" alt="" loading="lazy">
+              <img class="promo-ghee" src="figma-mana-ko-ghee-cutout.png" width="346" height="473" alt="" loading="lazy">
+            </div>
+            <div class="promo-slide" role="img" aria-label="Mana Ko achar jars" aria-hidden="true">
+              <img class="promo-assortment" src="catalog-mana-ko-achar.png" width="331" height="345" alt="" loading="lazy">
+            </div>
+            <div class="promo-slide" role="img" aria-label="Poshilo Sattu jars and pack" aria-hidden="true">
+              <img class="promo-assortment" src="catalog-sattu.png" width="334" height="318" alt="" loading="lazy">
+            </div>
+          </div>
+          <p>Find product names and varieties across all 12 categories.</p>
+          <a href="#products">Explore the categories</a>
+        </div>
+      </div>
+      <div class="harvest-scene">
+        <img class="harvest-photo" src="figma-mana-ko-picnic.jpg" width="1920" height="900" alt="Mana Ko ghee, beaten rice, and achar in a picnic basket on the grass beside grapes and croissants." loading="lazy" decoding="async">
+      </div>
+      <div class="harvest-reveal" id="harvest-story" aria-hidden="true"></div>
+    </section>
+    <section class="retail-shopping" aria-labelledby="retail-shopping-heading">
+      <div class="retail-shopping-frame">
+        <div class="retail-shopping-poster">
+          <img src="figma-manaram-retail-poster-jibro.webp" width="1122" height="1402" alt="A phone displays the Jibro Foods Buckwheat Flour page among Mana Ko dairy products, achar jars, and Poshilo sattu." loading="lazy" decoding="async">
+        </div>
+        <div class="retail-shopping-copy">
+          <h2 id="retail-shopping-heading">Where to shop</h2>
+          <p>Find Manaram Farm foods at Mana Ko Mart in Nepal and Jibro Mart in the United States.</p>
+          <div class="retail-shopping-links">
+            <a class="learn shop-mana-ko" href="https://manakomart.com/" aria-label="Mana Ko Mart, Nepal">
+              <img src="figma-mana-mart-retailer.png" width="450" height="132" alt="">
+              <span class="retailer-country">Nepal</span>
+            </a>
+            <a class="learn shop-jibro" href="https://jibrofoods.com/" aria-label="Jibro Mart, United States">
+              <img src="figma-jibro-foods-retailer.png" width="439" height="140" alt="">
+              <span class="retailer-country">United States</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="retail" id="stores">
+    <section class="footer-info" aria-label="Locations, retailers, and contact information">
+      <div>
+        <strong id="footer-location-heading">Our locations</strong>
+        <ul class="footer-addresses" aria-labelledby="footer-location-heading">
+          <li>Kathmandu, Nepal<br>Baluwatar 4</li>
+          <li>Birtamod, Jhapa, Nepal<br>Ward 10</li>
+        </ul>
+      </div>
+      <div id="retailers">
+        <strong id="footer-retailers-heading">Where to buy</strong>
+        <ul aria-labelledby="footer-retailers-heading">
+          <li><a id="mana-mart" href="https://manakomart.com/?utm_source=manaram_farm&amp;utm_medium=referral&amp;utm_campaign=farm_website&amp;utm_content=nepal_partner">Mana Mart</a></li>
+          <li><a id="jibro-foods" href="https://jibrofoods.com/">Jibro Foods</a></li>
+        </ul>
+      </div>
+      <div id="contact"><strong>Business inquiries</strong><p>+977-01-5971547<br>info@manaram.group</p></div>
+    </section>
+    <div class="footer-lower">
+      <div class="store-callout">
+        <img class="footer-wordmark" src="figma-manaram-footer-logo-white.png" width="630" height="222" alt="Manaram Farm" decoding="async">
+        <p>Producing dairy and pantry foods in Birtamod, Jhapa, Nepal, since 2014.</p>
+        <a class="footer-cta" href="mailto:info@manaram.group">Get in touch</a>
+      </div>
+      <figure class="footer-certifications">
+        <img id="retail-partners" src="figma-footer-certifications-white.png?v=4" width="2320" height="540" loading="lazy" decoding="async" alt="IAS Accredited Management Systems Certification Body. G-CERTi System Service, GINE-0068-FC. ISO 22000:2018.">
+        <figcaption>At our facility in Birtamod, Jhapa, the food safety management system is certified to <strong>ISO 22000:2018</strong>.</figcaption>
+      </figure>
+    </div>
+    <small class="footer-copyright">© 2025 Manaram Farm. All rights reserved.</small>
+  </footer>
+</body>
+</html>
