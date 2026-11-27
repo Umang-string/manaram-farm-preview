@@ -433,16 +433,22 @@ a:focus-visible { outline: 3px solid var(--brand-link); outline-offset: 4px; }
   grid-template-columns: repeat(2, minmax(0, 416px));
   gap: 10px;
   justify-content: center;
-  align-items: start;
-  width: fit-content;
-  max-width: 100%;
+  align-items: stretch;
+  width: min(100%, 842px);
   margin-inline: auto;
 }
 .retail-shopping-poster {
+  position: relative;
   overflow: hidden;
+}
+.retail-shopping-poster::before {
+  content: "";
+  display: block;
   aspect-ratio: 1;
 }
 .retail-shopping-poster > img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
@@ -469,38 +475,32 @@ a:focus-visible { outline: 3px solid var(--brand-link); outline-offset: 4px; }
   letter-spacing: -.015em;
 }
 .retail-shopping-copy p { margin-top: .5rem; font-size: 1rem; line-height: 1.5; }
-.retail-shopping-links { display: grid; gap: .625rem; margin-top: 1.5rem; }
-.retail-shopping-links .learn {
+.retailers { display: grid; gap: .625rem; margin-top: 1.5rem; }
+.retailer-card {
+  display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: .375rem;
+  padding: .65em 1.55em;
+  color: var(--brand-ink);
+  font-size: var(--text-action);
+  line-height: 1.3;
   text-align: center;
-  margin: 0;
-  border-radius: 0;
-  --brand-on-cta: var(--brand-ink);
-  --brand-cta-hover: color-mix(in srgb, var(--brand-cta) 88%, var(--retailer-accent));
-  --brand-cta-active: color-mix(in srgb, var(--brand-cta) 78%, var(--retailer-accent));
 }
-.retail-shopping-links img { display: block; width: min(8rem, 62%); height: auto; }
-.retail-shopping-links .retailer-country { font-size: .875rem; font-weight: 600; text-transform: none; }
-.retail-shopping-links .learn:focus-visible { outline-color: white; }
-.retail-shopping-links .shop-mana-ko {
-  --retailer-accent: #1475b9;
-  --brand-cta: #e4f4ff;
-}
-.retail-shopping-links .shop-jibro {
-  --retailer-accent: #96bf3b;
-  --brand-cta: #f1f8de;
-}
+.retailer-card img { display: block; width: min(8rem, 62%); height: auto; }
+.retailer-country { font-size: .875rem; font-weight: 600; }
+.retailer-card.shop-mana-ko { background: #e4f4ff; }
+.retailer-card.shop-jibro { background: #f1f8de; }
 @media (max-width: 900px) {
   .retail-shopping { padding-inline: 5%; }
 }
 @media (max-width: 700px) {
   .retail-shopping { background-image: url("figma-utility-bar-farm-mobile.svg"); }
   .retail-shopping-frame { grid-template-columns: minmax(0, 416px); }
-  .retail-shopping-poster { aspect-ratio: 11 / 10; }
-  .retail-shopping-links { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 8px; }
-  .retail-shopping-links .learn { justify-content: center; text-align: center; min-height: 44px; padding-inline: .65em; font-size: .875rem; }
+  .retail-shopping-poster::before { aspect-ratio: 11 / 10; }
+  .retailers { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 8px; }
+  .retailer-card { min-height: 44px; padding-inline: .65em; font-size: .875rem; }
 }
 .harvest-reveal {
   grid-area: 2 / 1;
