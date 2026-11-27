@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="typography.css?v=5">
   <link rel="stylesheet" href="farm-opening.css">
   <link rel="stylesheet" href="figma.css?v=182">
-  <link rel="stylesheet" href="farm-menu.css?v=21">
-  <link rel="stylesheet" href="farm-footer.css">
+  <link rel="stylesheet" href="farm-menu.css?v=22">
+  <link rel="stylesheet" href="farm-footer.css?v=2">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,11 +49,11 @@
       <div class="awning-spotlights">
         <div class="awning-spotlight">
           <span class="awning-message"><img class="awning-basket" src="figma-retail-basket.svg" width="72" height="64" alt="">Retail partner in Nepal</span>
-          <a href="#mana-mart">Meet Mana Mart</a>
+          <span class="awning-partner">Meet Mana Mart</span>
         </div>
         <div class="awning-spotlight" hidden>
           <span class="awning-message"><img class="awning-basket" src="figma-retail-basket.svg" width="72" height="64" alt="">Retail partner in the U.S.</span>
-          <a href="#jibro-foods">Meet Jibro Mart</a>
+          <span class="awning-partner">Meet Jibro Mart</span>
         </div>
       </div>
     </div>
@@ -66,10 +66,10 @@
         <span class="nav-label">Recipes</span>
         <a href="#contact" data-nav="contact">Contact</a>
       </nav>
-      <a class="mana-ko-cta" href="https://manakomart.com/" data-nav="mana-ko" aria-label="Shop now at Mana Mart">
+      <span class="mana-ko-cta">
         <img src="farm-mana-ko.png" width="866" height="402" alt="">
         Shop now
-      </a>
+      </span>
       <button type="button" class="menu-toggle" hidden aria-label="Open navigation" aria-expanded="false" aria-controls="farm-mobile-nav"><span></span><span></span></button>
     </div>
   </header>
@@ -79,10 +79,10 @@
     <a href="#products" data-nav="products">Products</a>
     <span class="nav-label">Recipes</span>
     <a href="#contact" data-nav="contact">Contact</a>
-    <a class="mana-ko-cta" href="https://manakomart.com/" data-nav="mana-ko" aria-label="Shop now at Mana Mart">
+    <span class="mana-ko-cta">
       <img src="farm-mana-ko.png" width="866" height="402" alt="">
       Shop now
-    </a>
+    </span>
   </nav>
   <main>
     <section class="hero-carousel farm-opening" aria-labelledby="home-title">
@@ -415,8 +415,8 @@
       <div id="retailers">
         <strong id="footer-retailers-heading">Where to buy</strong>
         <ul aria-labelledby="footer-retailers-heading">
-          <li><a id="mana-mart" href="https://manakomart.com/?utm_source=manaram_farm&amp;utm_medium=referral&amp;utm_campaign=farm_website&amp;utm_content=nepal_partner">Mana Mart</a></li>
-          <li><a id="jibro-foods" href="https://jibrofoods.com/">Jibro Foods</a></li>
+          <li><span id="mana-mart">Mana Mart</span></li>
+          <li><span id="jibro-foods">Jibro Foods</span></li>
         </ul>
       </div>
       <div id="contact"><strong>Business inquiries</strong><p>+977-01-5971547<br>info@manaram.group</p></div>
@@ -425,7 +425,7 @@
       <div class="store-callout">
         <img class="footer-wordmark" src="figma-manaram-footer-logo-white.png" width="630" height="222" alt="Manaram Farm" decoding="async">
         <p>Producing dairy and pantry foods in Birtamod, Jhapa, Nepal, since 2014.</p>
-        <a class="footer-cta" href="mailto:info@manaram.group">Get in touch</a>
+        <span class="footer-cta">Get in touch</span>
       </div>
       <figure class="footer-certifications">
         <img id="retail-partners" src="figma-footer-certifications-white.png?v=4" width="2320" height="540" loading="lazy" decoding="async" alt="IAS Accredited Management Systems Certification Body. G-CERTi System Service, GINE-0068-FC. ISO 22000:2018.">

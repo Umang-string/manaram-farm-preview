@@ -41,7 +41,7 @@ html { scroll-padding-top: var(--masthead-height, var(--nav-height)); }
   text-align: center;
   line-height: 1.15;
 }
-.awning a {
+.awning :is(a, .awning-partner) {
   flex: none;
   padding: .38em .85em;
   border-radius: 999px;
@@ -135,8 +135,8 @@ html { scroll-padding-top: var(--masthead-height, var(--nav-height)); }
   white-space: nowrap;
   transition: background .25s, color .25s;
 }
-.mana-ko-cta:is(:hover, :focus-visible) { background: var(--brand-mist); }
-.mana-ko-cta:active { background: var(--brand-tint); }
+a.mana-ko-cta:is(:hover, :focus-visible) { background: var(--brand-mist); }
+a.mana-ko-cta:active { background: var(--brand-tint); }
 .mana-ko-cta img { display: block; width: 66px; height: auto; }
 .navigation .menu-toggle, .mobile-nav { display: none; }
 
@@ -202,7 +202,7 @@ html { scroll-padding-top: var(--masthead-height, var(--nav-height)); }
   .awning-spotlights { min-width: 0; max-width: 100%; }
   .awning-spotlight { flex-wrap: nowrap; }
   .awning-message { text-wrap: balance; }
-  .awning a { padding: .48em 1em; }
+  .awning :is(a, .awning-partner) { padding: .48em 1em; }
 }
 @media (prefers-reduced-motion: reduce) {
   .masthead, .masthead *, .mobile-nav { transition: none; }

@@ -41,7 +41,7 @@
 .footer-wordmark { width: clamp(13rem, 18vw, 20rem); height: auto; }
 .store-callout p { max-width: 38ch; margin-top: .65rem; font-size: var(--text-body); line-height: 1.45; }
 .footer-cta { display: block; width: min(100%, 25rem); margin-top: 1rem; padding: .85em 1em; border-radius: 100px; background: var(--brand-cta); color: var(--brand-on-cta); font-size: var(--text-action); font-weight: 740; text-decoration: none; text-align: center; text-transform: uppercase; }
-.footer-cta:is(:hover, :focus-visible) { background: var(--brand-cta-hover); }
+a.footer-cta:is(:hover, :focus-visible) { background: var(--brand-cta-hover); }
 .retail .footer-cta:focus-visible { outline: 3px solid white; outline-offset: 3px; }
 .footer-certifications { justify-self: end; width: min(100%, 30rem); text-align: end; }
 .footer-certifications img { width: min(100%, 30vw, 25.375rem); height: auto; margin-inline-start: auto; }
