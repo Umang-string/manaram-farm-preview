@@ -124,7 +124,8 @@ a:focus-visible { outline: 3px solid var(--brand-link); outline-offset: 4px; }
   font-weight: 750;
   text-transform: uppercase;
 }
-.learn:is(:hover, :focus-visible) { background: var(--brand-cta-hover); }
+.learn:disabled { border: 0; cursor: default; opacity: 1; }
+.learn:not(:disabled):is(:hover, :focus-visible) { background: var(--brand-cta-hover); }
 .farm-signature {
   margin-top: clamp(2rem, 3.2vw, 3.5rem);
 }
@@ -408,7 +409,7 @@ a:focus-visible { outline: 3px solid var(--brand-link); outline-offset: 4px; }
 }
 .category-shop { display: inline-block; margin-top: 1.15rem; padding: .75rem 1.1rem; }
 .category-view-all:is(:hover, :focus-visible), .category-shop:is(:hover, :focus-visible) { background: var(--brand-cta-hover); }
-.learn:active, .promo a:active, .category-view-all:active, .category-shop:active { background: var(--brand-cta-active); color: var(--brand-on-cta); }
+.learn:not(:disabled):active, .promo a:active, .category-view-all:active, .category-shop:active { background: var(--brand-cta-active); color: var(--brand-on-cta); }
 .portfolio-catalog { width: min(92%, 42rem); margin: .75rem auto 0; }
 .category-view-all::-webkit-details-marker { display: none; }
 .portfolio-catalog:not([open]) > summary span:last-child,
